@@ -1,383 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Abdallah R.H. Hussein | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
+</head>
+<body>
     <nav id="desktop-nav">
-      <div class="logo">Abdallah R.H. Hussein</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Abdallah Hussein</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="logo">Abdallah R.H. Hussein</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.jpg" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Abdallah Hussein</h1>
-        <p class="section__text__p2">Student, Software Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/AAbdallah Hussein - resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.jpg" alt="Abdallah Hussein profile picture" class="profile-pic" />
         </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/abdallah-r-h-hussein-b92430260/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/ab320043'"
-          />
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Abdallah Hussein</h1>
+            <p class="section__text__p2">Computer Science Student & Developer</p>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Orlando, FL</p>
+                <p><i class="fas fa-envelope"></i> abdallahrh001@gmail.com</p>
+                <p><i class="fas fa-phone"></i> (352) 362-5758</p>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/AAbdallah Hussein - resume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <a href="https://www.linkedin.com/in/abdallah-r-h-hussein-b92430260/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/ab320043" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
         </div>
-      </div>
     </section>
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <h5>• Orlando Events and Promos</h5>
-              <p>Account Executive <br> Jun 2023 - Oct 2023</p>
-              <h5>• College of Central Florida</h5>
-              <p>Staff, Students Services Coordinator / Graphic Designer <br> Aug 2022 - Jan 2023</p>
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <h4>University of Central Florida</h4>
-              <p>B.S. Computer Scinece <br> Jan 2023 - May 2025<br> • Grade: 3.3 <br> • Relevant Coursework: Data Structures & Algorithms, 
-                OOP in Java, Computer Logic and Org <br> • Activities & Leadership: PSA, Toastmasters International</p>
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p class="about-text">
+                        I am a dedicated Computer Science student at the University of Central Florida with a strong foundation in software development, specializing in full-stack development, AI, and mobile app development. With hands-on experience in developing scalable web and mobile applications, I am passionate about creating innovative solutions that enhance user experiences.
+                    </p>
+                </div>
+                <div class="about-containers">
+                    <div class="details-container">
+                        <i class="fas fa-briefcase icon"></i>
+                        <h3>Experience</h3>
+                        <div class="experience-item">
+                            <h4>Software Development Engineering Intern</h4>
+                            <h5>Lok-Incubator.com | June 2024 – Present</h5>
+                            <ul>
+                                <li>Developed full-stack web applications using React Native, TypeScript, and JavaScript</li>
+                                <li>Designed and deployed scalable RESTful APIs with Node.js and Express</li>
+                                <li>Worked collaboratively within a 10-person team using JIRA</li>
+                            </ul>
+                        </div>
+                        <div class="experience-item">
+                            <h4>iOS Developer</h4>
+                            <h5>University of Central Florida | Nov 2023 – Jan 2024</h5>
+                            <ul>
+                                <li>Converted an Android application into a fully functional iOS app using Swift</li>
+                                <li>Designed intuitive UI and implemented real-time notifications using Firebase</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <i class="fas fa-graduation-cap icon"></i>
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <h4>University of Central Florida</h4>
+                            <p>B.S. in Computer Science (Expected Graduation: August 2025)</p>
+                            <ul>
+                                <li>GPA: 3.82/4.00, Dean's List</li>
+                                <li>Concentrations: AI Intelligence and Machine Learning, Full-Stack Development</li>
+                                <li>Relevant Coursework: Data Structures & Algorithms, Machine Learning, AI, Statistics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="text-container">
-            <p> An ambitious computer science student in my Junior year @ UCF, 
-                with a strong drive to learn and excel in the field of AI and algorithms, 
-                Passionate about leveraging technology for positive change and continuous 
-                learning in the world of computer science. Open to exciting opportunities in the field.
-            </p>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Technical Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">June 2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Junior Software Engineer</h3>
+                        <h4>Lok-Incubator</h4>
+                        <ul>
+                            <li>Developed full-stack web applications using React Native, TypeScript, and JavaScript, optimizing UI/UX for over 1,000 active users.</li>
+                            <li>Designed and deployed scalable RESTful APIs with Node.js and Express, reducing response times by 30%.</li>
+                            <li>Worked collaboratively within a 10-person team using JIRA to manage project tasks and ensure on-time delivery.</li>
+                        </ul>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
+                <div class="timeline-item">
+                    <div class="timeline-date">Nov 2023 - Jan 2024</div>
+                    <div class="timeline-content">
+                        <h3>iOS Developer</h3>
+                        <h4>University of Central Florida</h4>
+                        <ul>
+                            <li>Converted an Android application (Java, Kotlin) into a fully functional iOS app using Swift and Xcode for the Disaster Tracking App.</li>
+                            <li>Designed an intuitive UI and implemented real-time notifications using Firebase to improve emergency response efficiency.</li>
+                            <li>Worked closely with campus police and emergency responders to enhance crisis communication capabilities.</li>
+                        </ul>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java Script</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Software Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C++</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+
     </section>
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="project-container">
+            <div class="project-card">
+                <div class="project-img-container">
+                    <img src="./assets/p1.jpg" alt="Project 1" class="project-img" />
+                    <div class="project-overlay">
+                        <h3>SecureGuard AI</h3>
+                        <p>Python, TensorFlow, Scikit-learn, PyCryptodome, Cloud</p>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h2 class="project-title">SecureGuard AI</h2>
+                    <p>Developed an AI-powered security tool for social media accounts that detects anomalous behavior and initiates automated encryption. Integrated AES-256 encryption for real-time data security and implemented multi-factor authentication.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Cloud</span>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ab320043'">
+                            <i class="fab fa-github"></i> Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ab320043'">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </button>
+                    </div>
+                </div>
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <h3> Movie Ticketing Base App </h3>
-            <p> reads in information about customers: customer name, number of tickets and time of arrival, and uses this
-                information to determine which booth each customer will buy tickets from, and at what time they will complete
-                their transaction.</p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ab320043'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ab320043'"
-              >
-                Live Demo
-              </button>
+            <div class="project-card reverse">
+                <div class="project-img-container">
+                    <img src="./assets/p2.png" alt="Project 2" class="project-img" />
+                    <div class="project-overlay">
+                        <h3>Decentralized Voting System</h3>
+                        <p>React, Solidity, Ethereum, Web3.js</p>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h2 class="project-title">Decentralized Voting System</h2>
+                    <p>Built a blockchain-based voting system that ensures transparency, security, and fraud prevention in elections. Utilized Ethereum smart contracts to enable immutable voting records and user authentication.</p>
+                    <div class="project-tech">
+                        <span>Blockchain</span>
+                        <span>React</span>
+                        <span>Solidity</span>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ab320043'">
+                            <i class="fab fa-github"></i> Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ab320043'">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </button>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              
+            <div class="project-card">
+                <div class="project-img-container">
+                    <img src="./assets/p3.jpg" alt="Project 3" class="project-img" />
+                    <div class="project-overlay">
+                        <h3>UCF Shuttle Navigation</h3>
+                        <p>Flutter, Dart, Firebase, Google Maps API</p>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h2 class="project-title">UCF Shuttle Navigation System</h2>
+                    <p>Developed a mobile app that provides real-time shuttle tracking and route optimization for UCF students. Integrated Google Maps API to offer accurate navigation and estimated arrival times.</p>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                        <span>Google Maps</span>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ab320043'">
+                            <i class="fab fa-github"></i> Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ab320043'">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </button>
+                    </div>
+                </div>
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <h3> CarHub website </h3>
-            <p> designed UI website, An Online car dealership, 
-                to demonstrate car brands and their manufactories, it will
-                connect you right to your desired car <br> designed via HTML&CSS&JS&React.
-                </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ab320043'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ab320043'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <h3> Tic-Tac-Toe game Using MiniMax Algorithm </h3>
-            <p>I recently built an unbeatable game of tic tac toe. 
-                It was a fun and very humbling project that taught me a ton. <br> It took a little while to really fundamentally understand the algorithm and implement it in my game. I found many code examples and explanations, but none that really walked a 
-                simpleton like me through the ins and outs of the process. </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ab320043'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ab320043'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+        
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h2><i class="fas fa-code"></i> Programming Languages</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-java"></i>
+                        <span>Java</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <span>TypeScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-swift"></i>
+                        <span>Swift (iOS)</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <span>SQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h2><i class="fas fa-layer-group"></i> Frameworks & Technologies</h2>
+                <div class="skills-tags">
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">React Native</span>
+                    <span class="skill-tag">Firebase</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">Scikit-learn</span>
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag">Dart</span>
+                    <span class="skill-tag">Express</span>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h2><i class="fas fa-tools"></i> Development Tools</h2>
+                <div class="skills-tags">
+                    <span class="skill-tag">Xcode</span>
+                    <span class="skill-tag">Android Studio</span>
+                    <span class="skill-tag">VSCode</span>
+                    <span class="skill-tag">PyCharm</span>
+                    <span class="skill-tag">Jupyter Notebooks</span>
+                    <span class="skill-tag">Eclipse</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">JIRA</span>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:abdullahrhussain3@gmail.com">abdullahrhussain3@gmail.com</a></p>
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-container">
+            <div class="contact-form-container">
+                <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="email" name="email" placeholder="Your Email" required />
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-color-1">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <i class="fas fa-envelope contact-icon email-icon"></i>
+                    <p><a href="mailto:abdallahrh001@gmail.com">abdallahrh001@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <p><a href="tel:+13523625758">(352) 362-5758</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    <p><a href="https://www.linkedin.com/in/abdallah-r-h-hussein-b92430260/" target="_blank">LinkedIn</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <i class="fab fa-github contact-icon"></i>
+                    <p><a href="https://github.com/ab320043" target="_blank">GitHub</a></p>
+                </div>
+            </div>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/abdallah-r-h-hussein-b92430260/">LinkedIn</a></p>
-        </div>
-      </div>
     </section>
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Abdallah Hussein. All Rights Reserved.</p>
+        <p>Copyright &#169; 2025 Abdallah R.H. Hussein. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
