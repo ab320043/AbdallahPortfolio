@@ -140,6 +140,12 @@ nav.scrolled {
     color: var(--primary-color);
 }
 
+.section__text__p2 {
+    font-size: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
 .title {
     font-size: 3.5rem;
     margin-bottom: 1rem;
